@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.contact.title">Contact — Wine &amp; Beer Georgia</title>
+  <meta name="description" content="Tell us what you're looking for. We respond within 24 hours. Reach us by form, WhatsApp, Telegram or email." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Georgian:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%236B1A2A'/><text x='16' y='22' font-size='17' font-family='Georgia,serif' fill='%23C9A84C' text-anchor='middle'>W</text></svg>" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Wine &amp; Beer Georgia — home">
+        <span class="brand-logo" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">Wine &amp; Beer Georgia</span>
+          <span class="brand-sub" data-i18n="common.tagline">Export partner for Georgian wine &amp; spirits</span>
+        </span>
+      </a>
+      <nav class="nav-menu" aria-label="Main navigation">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="products.html" data-i18n="nav.products">Products</a>
+        <a href="how-it-works.html" data-i18n="nav.howItWorks">How It Works</a>
+        <a href="tours.html" data-i18n="nav.tours">Tours</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a>
+        <a class="btn btn--primary nav-cta-mobile" href="contact.html" data-i18n="common.requestQuote">Request a Quote</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn" type="button" data-lang="ka" aria-pressed="false">KA</button>
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" type="button" data-lang="ru" aria-pressed="false">RU</button>
+        </div>
+        <a class="btn btn--primary nav-cta" href="contact.html" data-i18n="common.requestQuote">Request a Quote</a>
+        <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================ PAGE HERO ============================ -->
+    <section class="hero page-hero" style="--hero-img: url('https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&w=1900&q=80');">
+      <div class="container">
+        <div class="hero-content">
+          <span class="eyebrow" data-i18n="nav.contact">Contact</span>
+          <h1 data-i18n="contact.title">Contact Us</h1>
+          <p class="hero-sub" data-i18n="contact.subtitle">Tell us what you're looking for. We respond within 24 hours.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACT GRID ============================ -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Form -->
+          <form id="contact-form" class="form" novalidate data-reveal>
+            <!-- ============================================================
+                 FORM DELIVERY — Web3Forms (https://web3forms.com)
+                 Submissions are emailed to the address registered with the
+                 access key below. No backend required.
+
+                 TODO: Replace YOUR_WEB3FORMS_ACCESS_KEY with your real key:
+                   1. Go to https://web3forms.com, enter your email, get a key.
+                   2. Paste it into the value="" of the access_key input below.
+                 The key is meant to be public (client-side) — this is normal.
+                 Until a real key is set, js/main.js shows a demo success message
+                 without sending anything.
+            ============================================================ -->
+            <input type="hidden" name="access_key" value="71624a2a-36b2-4080-8f27-8741cd547d08" />
+            <input type="hidden" name="subject" value="New B2B request — winebeerge.com" />
+            <input type="hidden" name="from_name" value="Wine & Beer Georgia website" />
+            <!-- Honeypot anti-spam field: hidden from users, bots fill it in -->
+            <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="form-status" role="status" aria-live="polite"></div>
+
+            <div class="field">
+              <label for="f-name"><span data-i18n="contact.form.name">Name</span> <span class="req">*</span></label>
+              <input id="f-name" name="name" type="text" required autocomplete="name" data-i18n-placeholder="contact.form.name" />
+            </div>
+
+            <div class="field">
+              <label for="f-company" data-i18n="contact.form.company">Company</label>
+              <input id="f-company" name="company" type="text" autocomplete="organization" data-i18n-placeholder="contact.form.company" />
+            </div>
+
+            <div class="field">
+              <label for="f-country" data-i18n="contact.form.country">Country</label>
+              <input id="f-country" name="country" type="text" autocomplete="country-name" data-i18n-placeholder="contact.form.country" />
+            </div>
+
+            <div class="field">
+              <label for="f-product"><span data-i18n="contact.form.product">Product interest</span> <span class="req">*</span></label>
+              <select id="f-product" name="product" required>
+                <option value="" data-i18n="contact.form.product.placeholder">Select a category</option>
+                <option value="wine" data-i18n="products.wine.title">Wine</option>
+                <option value="chacha" data-i18n="products.chacha.title">Chacha</option>
+                <option value="vodka" data-i18n="products.vodka.title">Vodka</option>
+                <option value="cognac" data-i18n="products.cognac.title">Cognac</option>
+                <option value="whisky" data-i18n="products.whisky.title">Whisky</option>
+                <option value="beer" data-i18n="products.beer.title">Beer</option>
+                <option value="mixed" data-i18n="contact.form.mixed">Mixed</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="f-message"><span data-i18n="contact.form.message">Message</span> <span class="req">*</span></label>
+              <textarea id="f-message" name="message" required data-i18n-placeholder="contact.form.message"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--block btn--lg" data-i18n="contact.form.submit">Send Request</button>
+
+            <p class="contact-note" style="margin-top:16px;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <span data-i18n="contact.note">We respond within 24 hours.</span>
+            </p>
+          </form>
+
+          <!-- Direct contact -->
+          <aside class="contact-side" data-reveal data-delay="1">
+            <h3 data-i18n="contact.direct.title">Or reach us directly</h3>
+            <div class="contact-links">
+              <!-- TODO: replace with the real WhatsApp number -->
+              <a class="contact-link" href="https://wa.me/995511716914" target="_blank" rel="noopener">
+                <span class="ic ic--wa" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.044zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                </span>
+                <span class="meta"><span data-i18n="contact.whatsapp">WhatsApp</span><small>+995 511 71 69 14</small></span>
+              </a>
+
+              <!-- TODO: replace with the real Telegram username -->
+              <a class="contact-link" href="https://t.me/WineBeerge" target="_blank" rel="noopener">
+                <span class="ic ic--tg" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                </span>
+                <span class="meta"><span data-i18n="contact.telegram">Telegram</span><small>@WineBeerge</small></span>
+              </a>
+
+              <!-- TODO: replace with the real email address -->
+              <a class="contact-link" href="mailto:Winebeer.ge@gmail.com">
+                <span class="ic ic--em" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                </span>
+                <span class="meta"><span data-i18n="contact.email">Email</span><small>Winebeer.ge@gmail.com</small></span>
+              </a>
+            </div>
+
+            <p class="contact-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <span data-i18n="contact.note">We respond within 24 hours.</span>
+            </p>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-logo" aria-hidden="true"></span>
+            <span class="brand-text">
+              <span class="brand-name">Wine &amp; Beer Georgia</span>
+              <span class="brand-sub">winebeerge.com</span>
+            </span>
+          </a>
+          <p class="footer-tagline" data-i18n="footer.tagline">Export partner for Georgian wine &amp; spirits. Direct from the producer.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.links.title">Pages</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+            <li><a href="how-it-works.html" data-i18n="nav.howItWorks">How It Works</a></li>
+            <li><a href="tours.html" data-i18n="nav.tours">Tours</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact.title">Contact</h4>
+          <!-- TODO: replace with real contact details -->
+          <ul class="footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <a href="mailto:Winebeer.ge@gmail.com">Winebeer.ge@gmail.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+              <a href="https://wa.me/995511716914">+995 511 71 69 14</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Tbilisi, Georgia</span>
+            </li>
+            <li data-i18n="footer.contact.note">Minimum order: 1 pallet (600 bottles)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.rights">© 2025 Wine &amp; Beer Georgia. All rights reserved.</span>
+        <span class="todo">winebeerge.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

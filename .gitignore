@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Editor / OS noise
+*.log
+*.swp
+.idea/
+.vscode/
+
+# Dependencies (none used, but just in case)
+node_modules/
+
+# Local env
+.env
+.env.local
