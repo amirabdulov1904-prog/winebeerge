@@ -181,7 +181,7 @@ p { margin: 0 0 1em; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
+  gap: 14px;
   height: var(--header-h);
 }
 
@@ -219,6 +219,7 @@ p { margin: 0 0 1em; }
   font-size: 1.12rem;
   color: var(--burgundy);
   letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 .brand-sub {
   font-size: 0.62rem;
@@ -232,9 +233,9 @@ p { margin: 0 0 1em; }
 .nav-menu a {
   position: relative;
   font-weight: 500;
-  font-size: 0.96rem;
+  font-size: 0.95rem;
   color: var(--ink);
-  padding: 9px 14px;
+  padding: 9px 11px;
   border-radius: 8px;
   transition: color 0.18s var(--ease), background 0.18s var(--ease);
 }
@@ -273,7 +274,7 @@ p { margin: 0 0 1em; }
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 6px 11px;
+  padding: 6px 9px;
   border-radius: 50px;
   transition: background 0.18s var(--ease), color 0.18s var(--ease);
 }
@@ -284,7 +285,7 @@ p { margin: 0 0 1em; }
   box-shadow: 0 1px 4px rgba(42, 10, 18, 0.3);
 }
 
-.nav-cta { display: inline-flex; }
+.nav-cta { display: inline-flex; padding: 12px 20px; font-size: 0.92rem; }
 
 /* hamburger */
 .nav-toggle {
@@ -844,8 +845,10 @@ p { margin: 0 0 1em; }
   .footer-grid { grid-template-columns: 1.6fr 1fr 1.4fr; }
 }
 
-/* Desktop nav vs. mobile nav */
-@media (max-width: 940px) {
+/* Desktop nav vs. mobile nav.
+   Breakpoint at 1100px: below it we use the compact hamburger dropdown so the
+   full inline nav never overflows in RU/KA (longer labels) on small laptops. */
+@media (max-width: 1240px) {
   .nav-toggle { display: block; }
   .nav-cta { display: none; }
   .nav-menu {
@@ -883,9 +886,14 @@ p { margin: 0 0 1em; }
   .nav-menu .nav-cta-mobile { display: inline-flex; }
 }
 
-@media (min-width: 941px) {
+@media (min-width: 1241px) {
   .nav-menu .nav-cta-mobile { display: none; }
 }
+
+/* Hide the tagline in the HEADER at all widths — it's the widest element in the
+   brand block and pushes the inline nav (long in RU/KA) off-screen. The footer
+   keeps the full tagline, where there's room. */
+.site-header .brand-sub { display: none; }
 
 /* Small screens: keep the header bar on a single line that fits the viewport.
    The brand tagline + 3-button lang switch + hamburger are too wide otherwise,
