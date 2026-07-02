@@ -510,6 +510,19 @@ p { margin: 0 0 1em; }
 }
 .wine-badge--red { background: rgba(107, 26, 42, 0.12); color: var(--burgundy); }
 .wine-badge--amber { background: rgba(201, 168, 76, 0.18); color: #8a6d1f; }
+.wine-badge--rose { background: rgba(214, 122, 140, 0.20); color: #a8455e; }
+.wine-badge--brandy { background: rgba(150, 90, 40, 0.16); color: #8a5a1f; }
+.wine-badge--lemon { background: rgba(170, 160, 40, 0.20); color: #78710f; }
+
+/* Placeholder shown until a real product photo exists at assets/products/<slug>.png */
+.wine-media.is-empty { position: relative; }
+.wine-media.is-empty::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 48'%3E%3Cpath d='M10 2h4v5.5c0 1.2 2 2.8 2 6V41a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V13.5c0-3.2 2-4.8 2-6V2z' fill='%236B1A2A'/%3E%3C/svg%3E") center / auto 52% no-repeat;
+  opacity: 0.15;
+}
 .wine-note { color: var(--muted); font-size: 0.95rem; margin: 0 0 16px; }
 .wine-specs {
   list-style: none;

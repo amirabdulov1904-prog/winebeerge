@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Georgian:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css?v=3" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%236B1A2A'/><text x='16' y='22' font-size='17' font-family='Georgia,serif' fill='%23C9A84C' text-anchor='middle'>W</text></svg>" />
 </head>
 <body>
@@ -61,87 +61,12 @@
       </div>
     </section>
 
-    <!-- ========================== PRODUCT CARDS ========================== -->
-    <section class="section section--cream">
+    <!-- ===================== CATALOGUE (rendered by js/catalog.js, grouped by category) ===================== -->
+    <div id="catalog"></div>
+
+    <!-- Catalogue / MOQ note -->
+    <section class="section section--white">
       <div class="container">
-        <div class="grid product-grid">
-
-          <!-- Wine -->
-          <article class="product-card" data-reveal data-delay="1">
-            <div class="product-media">
-              <!-- TODO: replace with a real product photo -->
-              <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?auto=format&fit=crop&w=800&q=80" alt="Georgian wine bottles" loading="lazy" />
-            </div>
-            <div class="product-body">
-              <h3 data-i18n="products.wine.title">Wine</h3>
-              <p data-i18n="products.wine.desc">From €2/bottle. Economy table wines, mid-range, and premium aged selections — red, white, dry and semi-sweet.</p>
-              <a class="btn btn--outline" href="contact.html" data-i18n="common.requestInfo">Request Info</a>
-            </div>
-          </article>
-
-          <!-- Chacha -->
-          <article class="product-card" data-reveal data-delay="2">
-            <div class="product-media">
-              <img src="https://images.unsplash.com/photo-1591704951890-0862b2e98acb?auto=format&fit=crop&w=800&q=80" alt="Chacha — Georgian grape brandy" loading="lazy" />
-            </div>
-            <div class="product-body">
-              <h3 data-i18n="products.chacha.title">Chacha</h3>
-              <p data-i18n="products.chacha.desc">Traditional Georgian grape brandy — natural, strong and authentic. Economy and premium grades available.</p>
-              <a class="btn btn--outline" href="contact.html" data-i18n="common.requestInfo">Request Info</a>
-            </div>
-          </article>
-
-          <!-- Vodka -->
-          <article class="product-card" data-reveal data-delay="3">
-            <div class="product-media">
-              <img src="https://images.unsplash.com/photo-1676105797668-458c2c007d05?auto=format&fit=crop&w=800&q=80" alt="Vodka" loading="lazy" />
-            </div>
-            <div class="product-body">
-              <h3 data-i18n="products.vodka.title">Vodka</h3>
-              <p data-i18n="products.vodka.desc">Clean, high-quality Georgian vodka. Custom recipes and private-label production available.</p>
-              <a class="btn btn--outline" href="contact.html" data-i18n="common.requestInfo">Request Info</a>
-            </div>
-          </article>
-
-          <!-- Cognac -->
-          <article class="product-card" data-reveal data-delay="1">
-            <div class="product-media">
-              <img src="https://images.unsplash.com/photo-1641214411085-16d56eb5c3ea?auto=format&fit=crop&w=800&q=80" alt="Georgian cognac" loading="lazy" />
-            </div>
-            <div class="product-body">
-              <h3 data-i18n="products.cognac.title">Cognac</h3>
-              <p data-i18n="products.cognac.desc">Aged Georgian cognacs and brandies, from 3-star to premium aged. Rich, smooth and competitively priced.</p>
-              <a class="btn btn--outline" href="contact.html" data-i18n="common.requestInfo">Request Info</a>
-            </div>
-          </article>
-
-          <!-- Whisky -->
-          <article class="product-card" data-reveal data-delay="2">
-            <div class="product-media">
-              <img src="https://images.unsplash.com/photo-1615887625746-f3d2aa27e048?auto=format&fit=crop&w=800&q=80" alt="Whisky" loading="lazy" />
-            </div>
-            <div class="product-body">
-              <h3 data-i18n="products.whisky.title">Whisky</h3>
-              <p data-i18n="products.whisky.desc">Georgian-produced whisky for the value segment. Flexible volumes and private-label options.</p>
-              <a class="btn btn--outline" href="contact.html" data-i18n="common.requestInfo">Request Info</a>
-            </div>
-          </article>
-
-          <!-- Beer -->
-          <article class="product-card" data-reveal data-delay="3">
-            <div class="product-media">
-              <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=800&q=80" alt="Georgian beer" loading="lazy" />
-            </div>
-            <div class="product-body">
-              <h3 data-i18n="products.beer.title">Beer</h3>
-              <p data-i18n="products.beer.desc">Lagers and craft beer from Georgian breweries. Bottles, cans and kegs available.</p>
-              <a class="btn btn--outline" href="contact.html" data-i18n="common.requestInfo">Request Info</a>
-            </div>
-          </article>
-
-        </div>
-
-        <!-- Catalogue / MOQ note -->
         <div class="note-banner" data-reveal>
           <span class="icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 11h1v5h1"/></svg>
@@ -213,7 +138,8 @@
     </div>
   </footer>
 
-  <script src="js/translations.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/translations.js?v=3"></script>
+  <script src="js/catalog.js?v=3"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>
