@@ -1,0 +1,68 @@
+Photo filenames for Wine & Beer Georgia catalogue (total 57)
+
+## WINES (33)
+  Rkatsiteli (RTVELISI, white dry)                     -> assets/products/rtvelisi-rkatsiteli-white-dry.png
+  Mtsvane (RTVELISI, white dry)                        -> assets/products/rtvelisi-mtsvane-white-dry.png
+  Kisi (RTVELISI, white dry)                           -> assets/products/rtvelisi-kisi-white-dry.png
+  Khikhvi (RTVELISI, white dry)                        -> assets/products/rtvelisi-khikhvi-white-dry.png
+  Tsinandali (RTVELISI, white dry)                     -> assets/products/rtvelisi-tsinandali-white-dry.png
+  Sviri (RTVELISI, white dry)                          -> assets/products/rtvelisi-sviri-white-dry.png
+  Alazani Valley (RTVELISI, white semisweet)           -> assets/products/rtvelisi-alazani-valley-white-semisweet.png
+  Tvishi (RTVELISI, white semisweet)                   -> assets/products/rtvelisi-tvishi-white-semisweet.png
+  Saperavi (RTVELISI, red dry)                         -> assets/products/rtvelisi-saperavi-red-dry.png
+  Saperavi (Old Vineyards) (RTVELISI, red dry)         -> assets/products/rtvelisi-saperavi-old-vineyards-red-dry.png
+  Mukuzani (RTVELISI, red dry)                         -> assets/products/rtvelisi-mukuzani-red-dry.png
+  Alazani Valley (RTVELISI, red semisweet)             -> assets/products/rtvelisi-alazani-valley-red-semisweet.png
+  Kindzmarauli (RTVELISI, red semisweet)               -> assets/products/rtvelisi-kindzmarauli-red-semisweet.png
+  Khvanchkara (RTVELISI, red semisweet)                -> assets/products/rtvelisi-khvanchkara-red-semisweet.png
+  Alazani Valley (RTVELISI, rose semisweet)            -> assets/products/rtvelisi-alazani-valley-rose-semisweet.png
+  Pirosmani (RTVELISI, rose semidry)                   -> assets/products/rtvelisi-pirosmani-rose-semidry.png
+  Rkatsiteli (Winery Bediani, white dry)               -> assets/products/winery-bediani-rkatsiteli-white-dry.png
+  Mtsvane (Winery Bediani, white dry)                  -> assets/products/winery-bediani-mtsvane-white-dry.png
+  Kisi (Winery Bediani, white dry)                     -> assets/products/winery-bediani-kisi-white-dry.png
+  Khikhvi (Winery Bediani, white dry)                  -> assets/products/winery-bediani-khikhvi-white-dry.png
+  Tsinandali (Winery Bediani, white dry)               -> assets/products/winery-bediani-tsinandali-white-dry.png
+  Pirosmani (Winery Bediani, white semidry)            -> assets/products/winery-bediani-pirosmani-white-semidry.png
+  Alazani Valley (Winery Bediani, white semisweet)     -> assets/products/winery-bediani-alazani-valley-white-semisweet.png
+  Tvishi (Winery Bediani, white semisweet)             -> assets/products/winery-bediani-tvishi-white-semisweet.png
+  Saperavi (Winery Bediani, red dry)                   -> assets/products/winery-bediani-saperavi-red-dry.png
+  Saperavi Premium (Winery Bediani, red dry)           -> assets/products/winery-bediani-saperavi-premium-red-dry.png
+  Mukuzani (Winery Bediani, red dry)                   -> assets/products/winery-bediani-mukuzani-red-dry.png
+  Pirosmani (Winery Bediani, red semidry)              -> assets/products/winery-bediani-pirosmani-red-semidry.png
+  Alazani Valley (Winery Bediani, red semisweet)       -> assets/products/winery-bediani-alazani-valley-red-semisweet.png
+  Akhasheni (Winery Bediani, red semisweet)            -> assets/products/winery-bediani-akhasheni-red-semisweet.png
+  Kindzmarauli (Winery Bediani, red semisweet)         -> assets/products/winery-bediani-kindzmarauli-red-semisweet.png
+  Khvanchkara (Winery Bediani, red semisweet)          -> assets/products/winery-bediani-khvanchkara-red-semisweet.png
+  Rosé (Winery Bediani, rose semidry)                  -> assets/products/winery-bediani-ros-rose-semidry.png
+
+## QVEVRI (10)
+  Rkatsiteli Qvevri (RTVELISI, amber dry)              -> assets/products/rtvelisi-rkatsiteli-qvevri-amber-dry.png
+  Saperavi Qvevri (RTVELISI, red dry)                  -> assets/products/rtvelisi-saperavi-qvevri-red-dry.png
+  Rkatsiteli Qvevri (Winery Bediani, amber dry)        -> assets/products/winery-bediani-rkatsiteli-qvevri-amber-dry.png
+  Mtsvane Qvevri (Winery Bediani, amber dry)           -> assets/products/winery-bediani-mtsvane-qvevri-amber-dry.png
+  Kisi Qvevri (Winery Bediani, amber dry)              -> assets/products/winery-bediani-kisi-qvevri-amber-dry.png
+  Khikhvi Qvevri (Winery Bediani, amber dry)           -> assets/products/winery-bediani-khikhvi-qvevri-amber-dry.png
+  Tsolikouri Qvevri (Winery Bediani, amber dry)        -> assets/products/winery-bediani-tsolikouri-qvevri-amber-dry.png
+  Tsitska Qvevri (Winery Bediani, amber dry)           -> assets/products/winery-bediani-tsitska-qvevri-amber-dry.png
+  Saperavi Qvevri (Winery Bediani, red dry)            -> assets/products/winery-bediani-saperavi-qvevri-red-dry.png
+  Vardisperi Rkatsiteli Qvevri (Winery Bediani, rose dry) -> assets/products/winery-bediani-vardisperi-rkatsiteli-qvevri-rose-dry.png
+
+## SPARKLING (4)
+  Sparkling Wine (RTVELISI, white brut)                -> assets/products/rtvelisi-sparkling-wine-white-brut.png
+  Sparkling Wine (RTVELISI, white semidry)             -> assets/products/rtvelisi-sparkling-wine-white-semidry.png
+  Sparkling Wine (RTVELISI, white semisweet)           -> assets/products/rtvelisi-sparkling-wine-white-semisweet.png
+  Sparkling Wine (RTVELISI, rose semidry)              -> assets/products/rtvelisi-sparkling-wine-rose-semidry.png
+
+## CHACHA & BRANDY (5)
+  Chacha Silver (Winery Bediani, chacha)               -> assets/products/winery-bediani-chacha-silver-chacha-classic.png
+  Chacha Gold (Winery Bediani, chacha)                 -> assets/products/winery-bediani-chacha-gold-chacha-oak.png
+  Brandy 3 YO (Winery Bediani, brandy)                 -> assets/products/winery-bediani-brandy-3-yo-brandy-aged3.png
+  Brandy 5 YO (Winery Bediani, brandy)                 -> assets/products/winery-bediani-brandy-5-yo-brandy-aged5.png
+  Brandy 7 YO (Winery Bediani, brandy)                 -> assets/products/winery-bediani-brandy-7-yo-brandy-aged7.png
+
+## LEMONADES (5)
+  Saperavi (BIA)                                       -> assets/products/bia-saperavi.png
+  Tarragon (BIA)                                       -> assets/products/bia-tarragon.png
+  Pear (BIA)                                           -> assets/products/bia-pear.png
+  Feijoa (BIA)                                         -> assets/products/bia-feijoa.png
+  Lemon (BIA)                                          -> assets/products/bia-lemon.png
