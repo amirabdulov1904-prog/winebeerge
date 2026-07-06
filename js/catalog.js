@@ -81,6 +81,30 @@
     { p: "bediani", c: "spirit", n: "Brandy 5 YO",   badge: "brandy", sub: "aged5",   g: "Grape distillate",    r: "Kakheti", v: "500 ml" },
     { p: "bediani", c: "spirit", n: "Brandy 7 YO",   badge: "brandy", sub: "aged7",   g: "Grape distillate",    r: "Kakheti", v: "500 ml" },
 
+    /* ============================ MAISELI (presentation: name + category only) ============================ */
+    { p: "maiseli", c: "wine", n: "Tsolikauri Reserve", col: "white", typ: "dry", g: "Tsolikauri", r: "Imereti", v: "750 ml" },
+    { p: "maiseli", c: "wine", n: "Tsinandali Reserve", col: "white", typ: "dry", g: "Rkatsiteli, Mtsvane", r: "Tsinandali, Kakheti (PDO)", v: "750 ml" },
+    { p: "maiseli", c: "wine", n: "Saperavi Reserve", col: "red", typ: "dry", g: "Saperavi", r: "Kakheti", v: "750 ml" },
+    { p: "maiseli", c: "wine", n: "Kisi", col: "white", typ: "semisweet", g: "Kisi", r: "Kakheti", v: "750 ml" },
+    { p: "maiseli", c: "wine", n: "Tvishi", col: "white", typ: "semisweet", g: "Tsolikauri", r: "Tvishi, Racha-Lechkhumi (PDO)", v: "750 ml" },
+    { p: "maiseli", c: "wine", n: "Kindzmarauli", col: "red", typ: "semisweet", g: "Saperavi", r: "Kindzmarauli, Kakheti (PDO)", v: "750 ml" },
+    { p: "maiseli", c: "wine", n: "Rose", col: "rose", typ: "semisweet", g: "Saperavi", r: "Kakheti", v: "750 ml" },
+    { p: "maiseli", c: "qvevri", n: "Saperavi Qvevri", col: "red", typ: "dry", g: "Saperavi", r: "Kakheti", v: "750 ml" },
+
+    /* ============================ PIRVELI (catalogue: full tech data) ============================ */
+    { p: "pirveli", c: "wine", n: "Saperavi OAK", col: "red", typ: "dry", g: "Saperavi", r: "Gulgula, Kakheti", v: "750 ml", vintage: "2022", abv: "13.5%" },
+    { p: "pirveli", c: "wine", n: "Saperavi", col: "red", typ: "dry", g: "Saperavi", r: "Gulgula, Kakheti", v: "750 ml", vintage: "2023", abv: "13.5%" },
+    { p: "pirveli", c: "wine", n: "Saperavi Limited", col: "red", typ: "dry", g: "Saperavi", r: "Gulgula, Kakheti", v: "750 ml", vintage: "2024", abv: "16%" },
+    { p: "pirveli", c: "wine", n: "Saperavi Semi-Sweet", col: "red", typ: "semisweet", g: "Saperavi", r: "Gulgula, Kakheti", v: "750 ml", vintage: "2022", abv: "13.5%" },
+    { p: "pirveli", c: "wine", n: "Cuvée", col: "white", typ: "semisweet", g: "Khikhvi, Kisi, Mtsvane", r: "Gulgula, Kakheti", v: "750 ml", vintage: "2022", abv: "13%" },
+    { p: "pirveli", c: "wine", n: "Kisi", col: "white", typ: "dry", g: "Kisi", r: "Gulgula, Kakheti", v: "750 ml", vintage: "2022", abv: "13.5%" },
+    { p: "pirveli", c: "wine", n: "Khikhvi", col: "white", typ: "dry", g: "Khikhvi", r: "Gulgula, Kakheti", v: "750 ml", vintage: "2022", abv: "13%" },
+    { p: "pirveli", c: "wine", n: "Mtsvane", col: "white", typ: "dry", g: "Mtsvane", r: "Gulgula, Kakheti", v: "750 ml", vintage: "2022", abv: "13.5%" },
+    { p: "pirveli", c: "qvevri", n: "Saperavi Qvevri", col: "red", typ: "dry", g: "Saperavi", r: "Gulgula, Kakheti", v: "750 ml", vintage: "2022", abv: "13%" },
+    { p: "pirveli", c: "qvevri", n: "Kisi Qvevri", col: "amber", typ: "dry", g: "Kisi", r: "Gulgula, Kakheti", v: "750 ml", vintage: "2022", abv: "12.5%" },
+    { p: "pirveli", c: "qvevri", n: "Khikhvi Qvevri", col: "amber", typ: "dry", g: "Khikhvi", r: "Gulgula, Kakheti", v: "750 ml", vintage: "2023", abv: "13%" },
+    { p: "pirveli", c: "qvevri", n: "Mtsvane Qvevri", col: "amber", typ: "dry", g: "Mtsvane", r: "Gulgula, Kakheti", v: "750 ml", vintage: "2022", abv: "13%" },
+
     /* ============================ LEMONADES (BIA) ============================ */
     { p: "bia", c: "lemonade", n: "Saperavi", flavour: "Saperavi", v: "0.5 L" },
     { p: "bia", c: "lemonade", n: "Tarragon", flavour: "Tarragon", v: "0.5 L" },
@@ -89,7 +113,7 @@
     { p: "bia", c: "lemonade", n: "Lemon",    flavour: "Lemon",    v: "0.5 L" }
   ];
 
-  var PRODUCER = { rtv: "RTVELISI", bediani: "Winery Bediani", bia: "BIA" };
+  var PRODUCER = { rtv: "RTVELISI", bediani: "Winery Bediani", bia: "BIA", maiseli: "Maiseli", pirveli: "Pirveli" };
 
   // Section order + i18n title keys
   var SECTIONS = [
@@ -149,6 +173,8 @@
     } else {
       specs += specRow("products.spec.variety", item.g);
       specs += specRow("products.spec.region", item.r);
+      if (item.vintage) specs += specRow("products.spec.vintage", item.vintage);
+      if (item.abv) specs += specRow("products.spec.alcohol", item.abv);
       specs += specRow("products.spec.volume", item.v);
       specs += specRow("products.spec.producer", PRODUCER[item.p]);
     }
