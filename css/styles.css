@@ -538,6 +538,34 @@ p { margin: 0 0 1em; }
 .wine-specs li b { font-size: 0.95rem; color: var(--ink); font-weight: 600; }
 .wine-body .btn { margin-top: auto; align-self: flex-start; }
 
+/* ------------------------------ Coffee cards ------------------------------ */
+.coffee-grid { grid-template-columns: 1fr; }
+.coffee-card {
+  margin: 0;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.22s var(--ease), box-shadow 0.22s var(--ease);
+}
+.coffee-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.coffee-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease);
+}
+.coffee-card:hover img { transform: scale(1.05); }
+.coffee-card figcaption {
+  padding: 14px 16px;
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  color: var(--ink);
+  text-align: center;
+}
+
 /* ------------------------------ Process steps ----------------------------- */
 .steps { display: grid; gap: 18px; counter-reset: step; }
 .step {
@@ -845,6 +873,7 @@ p { margin: 0 0 1em; }
   .grid--2 { grid-template-columns: repeat(2, 1fr); }
   .product-grid { grid-template-columns: repeat(2, 1fr); }
   .wine-grid { grid-template-columns: repeat(2, 1fr); }
+  .coffee-grid { grid-template-columns: repeat(2, 1fr); }
   .stats { grid-template-columns: repeat(4, 1fr); }
 }
 
@@ -852,6 +881,7 @@ p { margin: 0 0 1em; }
   .grid--3 { grid-template-columns: repeat(3, 1fr); }
   .product-grid { grid-template-columns: repeat(3, 1fr); }
   .wine-grid { grid-template-columns: repeat(3, 1fr); }
+  .coffee-grid { grid-template-columns: repeat(4, 1fr); }
   .split { grid-template-columns: 1.05fr 1fr; gap: 48px; }
   .split--reverse .split-media { order: 2; }
   .contact-grid { grid-template-columns: 1.25fr 1fr; align-items: start; }

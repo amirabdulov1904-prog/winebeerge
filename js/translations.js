@@ -142,6 +142,14 @@ const translations = {
     "products.spec.flavour": "Flavour",
     "products.spec.producer": "Producer",
 
+    /* ---------- MONDO COFFEE ---------- */
+    "coffee.eyebrow": "New — Coffee Export",
+    "coffee.sub": "Georgian coffee for export — a new line we're adding. A few samples below.",
+    "coffee.cap1": "Coffee bags",
+    "coffee.cap2": "Roasted beans",
+    "coffee.cap3": "Freshly brewed",
+    "coffee.cap4": "Espresso",
+
     /* ---------- HOW IT WORKS ---------- */
     "how.title": "How It Works",
     "how.subtitle": "A clear, transparent process from first contact to delivered shipment.",
@@ -339,6 +347,13 @@ const translations = {
     "products.spec.type": "Тип",
     "products.spec.flavour": "Вкус",
     "products.spec.producer": "Производитель",
+
+    "coffee.eyebrow": "Новое — экспорт кофе",
+    "coffee.sub": "Грузинский кофе на экспорт — новое направление. Ниже — несколько примеров.",
+    "coffee.cap1": "Кофе в упаковке",
+    "coffee.cap2": "Обжаренные зёрна",
+    "coffee.cap3": "Свежесваренный",
+    "coffee.cap4": "Эспрессо",
 
     "how.title": "Как мы работаем",
     "how.subtitle": "Понятный и прозрачный процесс — от первого контакта до доставленной поставки.",
@@ -539,6 +554,13 @@ const translations = {
     "products.spec.type": "ტიპი",
     "products.spec.flavour": "გემო",
     "products.spec.producer": "მწარმოებელი",
+
+    "coffee.eyebrow": "ახალი — ყავის ექსპორტი",
+    "coffee.sub": "ქართული ყავა ექსპორტისთვის — ახალი მიმართულება. ქვემოთ — რამდენიმე ნიმუში.",
+    "coffee.cap1": "ყავა შეფუთვაში",
+    "coffee.cap2": "მოხალული მარცვლები",
+    "coffee.cap3": "ახლადმოხარშული",
+    "coffee.cap4": "ესპრესო",
 
     "how.title": "როგორ ვმუშაობთ",
     "how.subtitle": "ნათელი, გამჭვირვალე პროცესი — პირველი კონტაქტიდან მიწოდებულ გადაზიდვამდე.",
